@@ -1,0 +1,4 @@
+new_part D:\usr\kpl\test.prt mm
+create_expression my_heigth=12
+save_part 
+
