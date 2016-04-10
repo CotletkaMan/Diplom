@@ -1,0 +1,19 @@
+#! UG/KF 17.0
+DefClass: box (ug_base_part);
+(child) blocka:
+{
+    class; ug_block;
+    length; 2;
+    width; 2;
+    height; 1;
+};
+(child) blockb:
+{
+    class; ug_block;
+    referenceframe; framexy(point(.25,.25,0),vector(1,0,0) , vector(0, 1, 0));
+    length; .5;
+    width; .5;
+    heigth; 1;
+    operation; Subtract;
+    target; {blocka:};
+};
